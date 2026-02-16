@@ -1,0 +1,61 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1200 300"
+  width="1200"
+  height="300"
+>
+  <defs>
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="100%" stop-color="#7f00ff"/>
+    </linearGradient>
+
+    <!-- String gradient -->
+    <linearGradient id="stringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cfefff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7cc9ff"/>
+      <stop offset="100%" stop-color="#cfefff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sharp string / energy arc -->
+  <path
+    d="
+      M 180 200
+      C 420 300, 820 70, 1080 140
+    "
+    fill="none"
+    stroke="url(#stringGradient)"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <!-- Extra pointy tips -->
+  <path
+    d="M 170 198 L 200 192"
+    stroke="#cfefff"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M 1090 142 L 1060 148"
+    stroke="#cfefff"
+    stroke-width="2"
+    stroke-linecap="round"
+  />
+
+  <!-- Logo Text -->
+  <text
+    x="180"
+    y="210"
+    font-size="120"
+    font-weight="700"
+    font-family="Poppins, Segoe UI, Arial, sans-serif"
+    fill="url(#textGradient)"
+    letter-spacing="1"
+  >
+    CryptoFlick
+  </text>
+</svg>
