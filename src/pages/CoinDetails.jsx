@@ -22,7 +22,7 @@ const CoinDetails = () => {
         setLoading(true);
         // Using the constant for API URL construction
         const res = await fetch(
-            `${COIN_GECKO_API.COIN_DETAILS(id)}?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true`
+            `${COIN_GECKO_API.COIN_DETAILS(id)}?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true`,{}
         );
         if (!res.ok) throw new Error("Network response was not ok");
         const data = await res.json();

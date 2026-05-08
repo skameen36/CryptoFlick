@@ -387,6 +387,7 @@ a {
 
 .coin-name-section {
   flex: 1;
+  min-width: 0;
 }
 
 .coin-name {
@@ -397,6 +398,9 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .symbol {
@@ -1329,6 +1333,8 @@ a {
   border-width: 6px;
   margin-bottom: 1.5rem;
   box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.2);
+  object-fit: cover;
+  border-radius: 10%;
 }
 
 .dev-name.large {

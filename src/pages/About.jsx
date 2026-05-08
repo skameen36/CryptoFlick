@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import avatar from "../assets/avatar.png";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -113,7 +114,7 @@ const About = () => {
         <div className="single-dev-container">
            <div className="dev-card large">
               <img 
-                src="https://avatars.githubusercontent.com/u/1?v=4" 
+                src={avatar} 
                 alt="Developer" 
                 className="dev-avatar large" 
               />
